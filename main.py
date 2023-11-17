@@ -30,7 +30,7 @@ def calculate_volume():
                                density=density)
 
 
-# if __name__ == "__main__":
-#     main()
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    main()
+# if __name__ == "__main__":
+#     app.run(debug=True, port=5001)
