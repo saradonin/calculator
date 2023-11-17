@@ -30,6 +30,6 @@ def calculate_volume():
 
 
 if __name__ == "__main__":
-    main()
+    calculate_volume()
 # if __name__ == "__main__":
 #     app.run(debug=True, port=5001)
