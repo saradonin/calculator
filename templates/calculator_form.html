@@ -1,0 +1,85 @@
+{% extends '__base__.html' %}
+{% block content %}
+
+
+<div class="container-sm">
+
+<form action="" method="POST">
+
+    <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label class="col-form-label">Initial volume: </label>
+        </div>
+        <div class="col-auto">
+          <input type="number" step="0.01" class="form-control" name="initial_volume" value={{initial_volume}}>
+        </div>
+        <div class="col-auto">
+          <span class="form-text">
+            ml
+          </span>
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label class="col-form-label">Initial weight: </label>
+        </div>
+        <div class="col-auto">
+          <input type="number" step="0.01" class="form-control" name="initial_weight" value={{initial_weight}}>
+        </div>
+        <div class="col-auto">
+          <span class="form-text">
+            ml
+          </span>
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label class="col-form-label">Current weight: </label>
+        </div>
+        <div class="col-auto">
+          <input type="number" step="0.01" class="form-control" name="current_weight" value={{current_weight}}>
+        </div>
+        <div class="col-auto">
+          <span class="form-text">
+            ml
+          </span>
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+          <label class="col-form-label">Density: </label>
+        </div>
+        <div class="col-auto">
+          <input type="number" step="0.01" class="form-control" name="Density" value=0.84>
+        </div>
+        <div class="col-auto">
+          <span class="form-text">
+            
+          </span>
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-center">
+        <div class="col-auto">
+        <label for="staticEmail" class="col-form-label">Current volume: </label>
+        </div>
+        <div class="col-auto">
+          <input type="text" readonly class="form-control-plaintext" name="current_volume" value={{ current_volume }}>
+         </div>
+      </div>
+
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Calculate</button>
+      </div>
+
+    </div>
+      
+
+
+</form>
+
+
+{% endblock content %}
