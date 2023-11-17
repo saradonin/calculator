@@ -14,7 +14,7 @@ def calculate_volume():
         current_weight = float(request.form.get("current_weight",0))
         density = float(request.form.get("density",0.84))
 
-        current_volume = string(round(Bottle.calculate_current_volume(
+        current_volume = str(round(Bottle.calculate_current_volume(
             initial_volume,
             initial_weight,
             current_weight,
