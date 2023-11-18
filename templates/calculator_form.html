@@ -2,48 +2,53 @@
 {% block content %}
 
 
-<div class="container-sm" style="width: 320px">
+<div class="container-sm" style="width: 340px">
 
-<form action="" method="POST">
+  <form action="" method="POST">
 
-  <div class="form-group row">
-    {{message}}
-    </div>
+    <!-- <div class="form-group row mb-3">
+      <h4>Perfume volume calculator</h4>
+    </div> -->
 
-
-
-    <div class="form-group row mb-3">
+    <div class="form-group row mb-2 text-danger">
       <div class="col-xs-2">
-          <label>Initial volume [ml]</label>
-          <input type="number" step="0.01" class="form-control" name="initial_volume" value={{initial_volume}}>
+        {{message}}
       </div>
     </div>
 
     <div class="form-group row mb-3">
       <div class="col-xs-2">
-          <label>Initial weight [g]</label>
-          <input type="number" step="0.01" class="form-control" name="initial_weight" value={{initial_weight}}>
+        <label>Initial volume [ml]</label>
+        <input type="number" step="0.01" class="form-control" name="initial_volume" value={{initial_volume}}>
       </div>
     </div>
 
     <div class="form-group row mb-3">
       <div class="col-xs-2">
-          <label>Current weight [g]</label>
-          <input type="number" step="0.01" class="form-control" name="current_weight" value={{current_weight}}>
+        <label>Initial weight [g]</label>
+        <input type="number" step="0.01" class="form-control" name="initial_weight" value={{initial_weight}}>
       </div>
     </div>
 
     <div class="form-group row mb-3">
       <div class="col-xs-2">
-          <label>Density [g/ml]</label>
-          <input type="number" step="0.01" class="form-control" name="density" value=0.84>
+        <label>Current weight [g]</label>
+        <input type="number" step="0.01" class="form-control" name="current_weight" value={{current_weight}}>
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <div class="col-xs-2">
+        <label>Density [g/ml]</label>
+        <input type="number" step="0.01" class="form-control" name="density" value=0.84>
       </div>
     </div>
 
     <div class="form-group row mb-3">
       <div class="col-xs-2">
         <label>Current volume [ml]</label>
-        <input type="text" class="form-control fw-bold" name="current_volume" value="{{current_volume}}" disabled readonly>
+        <input type="text" class="form-control fw-bold" name="current_volume" value="{{current_volume}}" disabled
+          readonly>
       </div>
     </div>
 
@@ -54,8 +59,7 @@
       </div>
     </div>
 
-
-</form>
+  </form>
 </div>
 
 
