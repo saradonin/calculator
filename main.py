@@ -28,7 +28,7 @@ def calculate_volume():
                                 current_weight=current_weight,
                                 density=density)
         except ValueError:
-            message = "Wypełnij poprawnie wszystkie pola"
+            message = "Please fill in all fields correctly."
             return render_template("calculator_form.html", message=message)
 
 
