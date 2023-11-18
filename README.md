@@ -22,3 +22,4 @@ docker exec -it calc python3 main.py
 ```
 Ensure you have [Docker](https://www.docker.com/get-started/) installed before running these commands.
 
+![flack_calc-removebg-preview](https://github.com/saradonin/flask-calculator/assets/124811561/fd45cd51-0c2a-4675-9815-59166054fd0b)
