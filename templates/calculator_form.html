@@ -6,9 +6,9 @@
 
   <form action="" method="POST">
 
-    <!-- <div class="form-group row mb-3">
+    <div class="form-group row mb-3 justify-content-between align-items-center">
       <h4>Perfume volume calculator</h4>
-    </div> -->
+    </div>
 
     <div class="form-group row mb-2 text-danger">
       <div class="col-auto">
@@ -16,59 +16,59 @@
       </div>
     </div>
 
-    <div class="form-group row mb-3 justify-content-between">
+    <div class="form-group row mb-3 justify-content-between align-items-center">
       <div class="col-auto">
         <label class="form-label">Initial volume [ml]</label>
       </div>
       <div class="col-auto">
-        <input type="number" step="0.01" class="form-control" name="initial_volume" style="width: 120px"
+        <input type="number" step="0.01" class="form-control" name="initial_volume" style="width: 125px"
           value={{initial_volume}}>
       </div>
     </div>
 
-    <div class="form-group row mb-3 justify-content-between">
+    <div class="form-group row mb-3 justify-content-between align-items-center">
       <div class="col-auto">
         <label>Initial weight [g]</label>
       </div>
       <div class="col-auto">
-        <input type="number" step="0.01" class="form-control" name="initial_weight" style="width: 120px"
+        <input type="number" step="0.01" class="form-control" name="initial_weight" style="width: 125px"
           value={{initial_weight}}>
       </div>
     </div>
 
-    <div class="form-group row mb-3 justify-content-between">
+    <div class="form-group row mb-3 justify-content-between align-items-center">
       <div class="col-auto">
         <label>Current weight [g]</label>
       </div>
       <div class="col-auto">
-        <input type="number" step="0.01" class="form-control" name="current_weight" style="width: 120px"
+        <input type="number" step="0.01" class="form-control" name="current_weight" style="width: 125px"
           value={{current_weight}}>
       </div>
     </div>
 
-    <div class="form-group row mb-3 justify-content-between">
+    <div class="form-group row mb-3 justify-content-between align-items-center">
       <div class="col-auto">
         <label>Density [g/ml]</label>
       </div>
       <div class="col-auto">
-        <input type="number" step="0.01" class="form-control" name="density" style="width: 120px" value=0.84>
+        <input type="number" step="0.01" class="form-control" name="density" style="width: 125px" value=0.84>
       </div>
     </div>
 
-    <div class="form-group row mb-3 justify-content-between">
+    <div class="form-group row mb-3 justify-content-between align-items-center">
       <div class="col-auto">
         <label>Current volume [ml]</label>
       </div>
       <div class="col-auto">
-        <input type="text" class="form-control fw-bold" name="current_volume" style="width: 120px"
+        <input type="text" class="form-control fw-bold" name="current_volume" style="width: 125px"
           value="{{current_volume}}" disabled readonly>
       </div>
     </div>
 
     <div class="form-group row mb-3">
-      <div class="col-xs-2 d-flex justify-content-between">
-        <a href="" class="btn btn-outline-secondary mb-3" style="width: 120px">Reset</a>
-        <button type="submit" class="btn btn-outline-primary mb-3" style="width: 120px">Calculate</button>
+      <div class="col-xs-2 d-flex justify-content-between align-items-center">
+        <a href="" class="btn btn-outline-secondary mb-3" style="width: 125px">Reset</a>
+        <button type="submit" class="btn btn-outline-primary mb-3" style="width: 125px">Calculate</button>
       </div>
     </div>
 
