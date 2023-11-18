@@ -7,13 +7,13 @@ app = Flask(__name__)
 @app.route("/", methods=['POST', 'GET'])
 def calculate_volume():
     if request.method == "GET":
-        return render_template("calculator_form.html")
+        return render_template("calculator_form.html", density=0.84)
     else:
         try:
-            initial_volume = float(request.form.get("initial_volume",0))
-            initial_weight = float(request.form.get("initial_weight",0))
-            current_weight = float(request.form.get("current_weight",0))
-            density = float(request.form.get("density",0.84))
+            initial_volume = float(request.form.get("initial_volume"))
+            initial_weight = float(request.form.get("initial_weight"))
+            current_weight = float(request.form.get("current_weight"))
+            density = float(request.form.get("density"))
             current_volume = round(Bottle.calculate_current_volume(
                 initial_volume,
                 initial_weight,
