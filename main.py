@@ -17,6 +17,11 @@ def calculate_volume():
 
             current_volume = round(
                 initial_volume - ((initial_weight - current_weight) / density), 2)
+            
+            if current_volume > initial_volume:
+                raise ValueError
+            if current_volume < 0:
+                raise ValueError
 
             return render_template("calculator_form.html",
                                    current_volume=current_volume,
@@ -26,7 +31,9 @@ def calculate_volume():
                                    density=density)
         except ValueError:
             message = "Please fill in all fields correctly."
-            return render_template("calculator_form.html", message=message)
+            return render_template("calculator_form.html", 
+                                   message=message,
+                                   density=0.84)
 
 
 if __name__ == "__main__":
