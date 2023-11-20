@@ -23,7 +23,8 @@ docker exec -it calc python3 main.py
 ```
 Ensure you have [Docker](https://www.docker.com/get-started/) installed before running these commands.
 
-![flask-volume-calc](https://github.com/saradonin/flask-calculator/assets/124811561/5edec922-092e-4199-8673-a0949c988815)
+![flask-volume-calc](https://github.com/saradonin/flask-calculator/assets/124811561/5f65c5e8-058b-4a73-a871-51c1f9d7ee86)
+
 
 
 
